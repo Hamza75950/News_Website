@@ -1,214 +1,206 @@
 {
   "status": "ok",
-  "totalResults": 16,
+  "totalResults": 38,
   "articles": [
     {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "Anne Tergesen and Oyin Adedoyin",
-      "title": "The 401(k) Investors Convinced That Target-Date Funds Miss the Mark",
-      "description": "They are the default choice for millions of retirement savers who are automatically enrolled in 401(k) plans. But some investors are moving out of them.",
-      "url": "https://www.wsj.com/personal-finance/retirement/401k-savers-target-date-funds-alternatives-6e4e6f75",
-      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/vpX9wLwvLmMrZLSsPX0riA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/the_wall_street_journal_hosted_996/200e36a41d4da40ee64854c3bc289a4d",
-      "publishedAt": "2024-08-04T01:00:00Z",
-      "content": "A group of investors are shunning the most popular retirement investment on Wall Street.\r\nTarget-date funds are a professionally managed portfolio of stocks and bonds that recalibrates the mix as we … [+6270 chars]"
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "The Washington Post",
+      "title": "Catalan leader Puigdemont reemerges in Spain, then vanishes, evading arrest - The Washington Post",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWVpNM0FaRlZzOVZpNnVYVE9NZ3JXVlZXZThfRE1lUUpLZUliNi1MNXR3eDJQQm5PaFpoLXBwUk9nN0FMOTUtUDNJRGstS1dXRGJqa3ZmSjItUlVxVGZOUHBDeXlJanpkUnNfWVBvaWR2UVlGbnhoWGJKMUItMVlSQnJtY0RTVlFvbFU5T25IWDFoTjZqYWVNTg?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T18:44:00Z",
+      "content": null
     },
     {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "Emily Bary, Therese Poletti, Tomi Kilgore",
-      "title": "Apple earnings: Stock rises as iPhone revenue beats estimates",
-      "description": "Apple reported results for its fiscal third quarter after the close of trading on Thursday. Follow along live as MarketWatch analyzes the expectations and results.",
-      "url": "https://www.wsj.com/livecoverage/apple-earnings-iphone-results-revenue-ai-q3",
-      "urlToImage": "https://images.mktw.net/im-18007061/social",
-      "publishedAt": "2024-08-01T20:33:59Z",
-      "content": "Apple's stock chart shows that there's greater risk of a bearish technical breakdown after earnings than a bullish breakout.\r\nDownside levels to watch include last week's lowest intraday price of $21… [+999 chars]"
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "CNBC",
+      "title": "Wall Street heads for best day in over a year, Dow jumps 700 points: Live updates - CNBC",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0weWFPSVZFYnZXbnllZTJ3bkNHZkpEZWFwdnRZdDg1by1qc05hWnFodkNhQkRUd2dhdnFndVQyZG5uZkx1OVRXVUlQbGJwSlZSTHJjM0cwb205d3lBZW9DV0dBbjJ5dmJFV0tXUllKa3RFNmJ5U1pB0gF8QVVfeXFMTXRnbFhISGtaSDhsLV9scXE2RHVoS0JFOUd6ZXBCSDBPVFNFdlVqZUxHdDIyM0VZMUU0RWQ1dXZEQ2J0NzAxMUJxNk5MU1J0V2hyOEY2WUd4RDdmVWpOZWVXT05OMUQ0dUdqb0FXT3pmX3RONUdxcDRIRldHNg?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T18:36:00Z",
+      "content": null
     },
     {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "Tomi Kilgore",
-      "title": "Amazon made $400 million on its equity investments in the second quarter",
-      "description": "Amazon plans to report second-quarter earnings after the close of trading Thursday. MarketWatch will be breaking down the expectations and results.",
-      "url": "https://www.wsj.com/livecoverage/amazon-earnings-results-q2-aws-ai-prime-spending-retail",
-      "urlToImage": "https://mw3.wsj.net/mw5/content/logos/mw_logo_social.png",
-      "publishedAt": "2024-08-01T17:29:59Z",
-      "content": "Amazon disclosed earlier this week that its equity investments in public companies were valued at a total of $2.525 billion as of June 30.\r\nThe bulk of that was from an investment in electric vehicle… [+714 chars]"
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "The Wall Street Journal",
+      "title": "Eli Lilly Stock Surges as Mounjaro and Zepbound Drugs Fuel Sales - The Wall Street Journal",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQbl8zYWIxZjN2R0dYc2U2T0h3bnJKR1RhNmpiZ0FXNmM0ZmxWcnR4Y2d4TzZsMUhsenJ3aVYwMVlWWHYtTkhsZG5iSnpTc184NExZaGY0OTI0QlM0eVZ1VzJXcE1CWjJubDk2dDZMZS1haV9aQUJSbGJtR0ZXdnVkMTR5WlZBeFFjdl85Q25xc0o1a0xtQ2k2Q1pFMXZRX1EyWHZzbzlSUjZObnhqV09kNkx6SmtCaUlfbnh3SkZibUpkcXlISlVoU3BBMmNTanRaaVJiVUtmUkpQUXJMTnF6cmpOZUc5dDhkY2VfSWZIb0JDRVdONnFDdllrUTk?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T18:26:00Z",
+      "content": null
     },
     {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "Joseph Adinolfi, Emily Bary, Vivien Lou Chen, Isabel Wang, Ciara Linnane, Jamie Chisholm",
-      "title": "U.S. stocks forfeit early gains as Wall Street awaits Amazon, Apple earnings",
-      "description": "Follow all the latest U.S. market action for Thursday here.",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-futures-steady-ahead-of-apple-earnings",
-      "urlToImage": "https://images.mktw.net/im-34752006/social",
-      "publishedAt": "2024-08-01T14:32:30Z",
-      "content": "While stock futures held on to earlier gains, Treasury yields moved lower on Thursday after the release of the latest batch of U.S. economic data.\r\nInvestors appeared to focus on the latest reading o… [+968 chars]"
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "The Washington Post",
+      "title": "After social media outcry, CDC tells doctors to better manage IUD pain - The Washington Post",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAwd2swM0hOODQzVl9KcVFyS1RMZzJwOVF4LVRhbmh5ZEFQX1ZMQURNVjZzSHA2TmM0aGY3MHBfTzNNZ0M5b01FR3dRZkR0V0NUdk9BUnBaUFN1U0kwQkZyMC1NX3RLZUlQRkhSQ21nLVhZZw?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T18:12:48Z",
+      "content": null
     },
     {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "Steve Goldstein, Jamie Chisholm",
-      "title": "Bank of England cuts rates for first time in over four years",
-      "description": "Follow live coverage of the Bank of England rate decision.",
-      "url": "https://www.wsj.com/livecoverage/bank-of-england-decision-market-split-on-whether-first-rate-cut-of-cycle-to-come",
-      "urlToImage": "https://images.mktw.net/im-35983513/social",
-      "publishedAt": "2024-08-01T11:04:21Z",
-      "content": "The market is torn on whether the Bank of England will make its first rate cut of the cycle, when it announces its decision at noon local time, or 7 a.m. Eastern. An unusual period of quiet due to th… [+961 chars]"
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "GSMArena.com",
+      "title": "Google Pixel 9 Pro XL specs leak, AI feature demoed - GSMArena.com news - GSMArena.com",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNQm9COHpZcmY3QUZTOFpxaVB5b19HQ25zQUswT0YzRHFTRUNCLThmdmFCV21kWHFBMTVrYW9rS1kwbVBxNDNEVHVsR0NNV3FubDFycXpIWFZHNXV3R3A1a0tUencyUzlCZkpXVmVJbGotSTdrX05INkx2Q19nVm9OdXJ5NnFHczlpUXVtWXlnN3FkVFlT0gGQAUFVX3lxTE05eFVwbGFjUmJUZTYwZ0ZzWTZRUW9GS0xtUmJJTHB0WUxLbXRMTGFRM2pCVjM5Rm54NHZTN2tjX2RycFRYSzRoUWI3RTJhZm9xd1RIQjlLWFY5UXd2Y0VPUVVrODhZODRzZ3dWU3IxeC1ZQXVqR3k0MkVpdlpBY254NWRmMkpwSGRFZy11a3VvQQ?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T18:01:01Z",
+      "content": null
     },
     {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "Emily Bary, Tomi Kilgore",
-      "title": "Meta earnings: Stock rises as the Facebook parent gives upbeat outlook",
-      "description": "Meta reported its second-quarter earnings after Wednesday's close. MarketWatch will be breaking down the expectations and results.",
-      "url": "https://www.wsj.com/livecoverage/meta-earnings-results-ai-q2-facebook-revenue-instagram",
-      "urlToImage": "https://images.mktw.net/im-93074937/social",
-      "publishedAt": "2024-07-31T20:08:49Z",
-      "content": "Investors in Meta's stock shouldn't expect another double-digit, post-earnings move, or at least that what the options market is saying.\r\nWill the options market be right for a change?\r\nFollowing Met… [+939 chars]"
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "Yahoo Sports",
+      "title": "Olympic basketball: France bullies Germany to advance to gold medal game - Yahoo Sports",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbnRqMV82amZ2T0UwQ2pFWXo0eHFtWGVjZEh6N0djNG5Fc1FLV2MtaTZRMThZa3hDZkFlNFE4bkYtX2szcjU3c2t6SkRoRDE2S2RfZDZ0QjltRVZKdW1fOEh4NFJ1Z0E5ZFBqTFRTMlRwbEMwaWhaVVV6ek84VlBaS3JmOF9UeVBfTVpTRi1Ga3FkWVI3dk43NjhiWUZXRGl1SG1pRUV1dm1YcEVhRWd3Vg?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T17:47:05Z",
+      "content": null
     },
     {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "Jeffry Bartash, Greg Robb, Steve Goldstein",
-      "title": "WATCH: Jerome Powell speaks after the Fed's interest-rate decision",
-      "description": "Follow all the action from the Federal Open Market Committee meeting and Jerome Powell press conference.",
-      "url": "https://www.wsj.com/livecoverage/fed-meeting-u-s-central-bank-likely-to-suggest-a-rate-cut-is-coming-soon",
-      "urlToImage": "https://images.mktw.net/im-274289/social",
-      "publishedAt": "2024-07-31T18:43:32Z",
-      "content": "Wall Street has largely become convinced the Fed will cut rates in September, but there are still a few holdouts.\r\nOne of them is Stephen Stanley, chief economist of Santander Capital Markets. Stanle… [+1250 chars]"
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "Daily Mail",
+      "title": "Japan earthquake: Authorities issue MEGAQUAKE warning for the first time ever after tremors earlier in the sam - Daily Mail",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbk9XNGhFUENaNVpSeVgyLTY3NXhDOUZRNDY1b05IeDBMLTZpUW9relZfaFcydjd6Und5TkdWRHlQMGtpVHoyOFhpNklSRDZSUGtpUWp2ZjdhczZnYWdra0N5RnRybExac1lFN2FUamZvRy14OGFmM0FpSnN4M0FRMHgzejdLNmZ1dHNQVDBmRHdkRFHSAZgBQVVfeXFMT1B1X3I0RkVhcnAxemNtS3BRZVQ4eExHcTJ4Q2NTQXgtSmNaWHFuVTBkS3VHWTY4LUIwVldFck5YR2FDanBOSEh1V0g1dEl2ZEFCSTlUd1M2Sk1HUDd0VzdPNTJ6UExQSUN4NWdZRjRmMnV5M2N4bEFwX1duMUNOOUFIbTFMWFJxTXctY1o1dmRYeGhDazVqWmo?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T17:42:52Z",
+      "content": null
     },
     {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "Isabel Wang",
-      "title": "Why the Fed has to 'thread a needle' today, according to this strategist",
-      "description": "Follow all the latest U.S. market action for Wednesday here.",
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-futures-rise-ahead-of-fed-decision-and-meta-earnings",
-      "urlToImage": "https://mw3.wsj.net/mw5/content/logos/mw_logo_social.png",
-      "publishedAt": "2024-07-31T14:57:49Z",
-      "content": "The Federal Reserve is likely to indicate that a reduction in borrowing costs could come as soon as September in its policy statement and in Chair Jerome Powell's press conference Wednesday afternoon… [+893 chars]"
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "CBS News",
+      "title": "Tim Walz's military record under scrutiny as he joins Kamala Harris on Democratic ticket - CBS News",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1HLVdXOVVsOEJoTWk2SDNOOHZtYzNUX2swNE9KNi12SVF2cHlrUEt1V0hCS2l0WlFRaVFzZ0xBd0w2QTE3NXMzVU1oUDdWNXp3RVFLbjJ5U01venNsNmdDeTctVU7SAWpBVV95cUxQN1QtVlhMblJwc0RyOTRIdnNBM3VrSExHRmVaQmZadlVLTkRuZWVuWDVVUmwxM0F0QjlILTJxWmN2eHlVUFNWU1ZqVzJmVTNib0l0Ml9ZU0cwSHNtSVIyVE9YM3FqTEIyNzFB?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T17:41:17Z",
+      "content": null
     },
     {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "Therese Poletti, Emily Bary, Tomi Kilgore",
-      "title": "AMD sees gross margins climb amid record data-center results",
-      "description": "AMD reported second-quarter results after Tuesday's closing bell, and investors will be keenly focused on the company's AI revenue forecast. Follow along live as MarketWatch breaks down the results.",
-      "url": "https://www.wsj.com/livecoverage/amd-earnings-results-q2-semiconductor-ai-advanced-micro-devices",
-      "urlToImage": "https://images.mktw.net/im-774775/social",
-      "publishedAt": "2024-07-30T21:05:55Z",
-      "content": "Shares of AMD jumped 2.6% in Tuesdays after-hours session, after the semiconductor maker and artificial intelligence play reported second-quarter earnings that beat expectations and raised its full-y… [+1089 chars]"
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "The Associated Press",
+      "title": "Interim leader Muhammad Yunus takes helm in Bangladesh, to seek peace and prepare elections - The Associated Press",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSTVVeEpXWXlqT0VvVEhKRmoySnJZejN4dFQ4cUdkem91dTdHeU11Z2k4MUpJeUM5X0ZUZVJpd2RpTWllb1JHUXEwM3lCcDhrcTY2c293VXpIOC1DUzNOVmh4WHd3dHlxR05waHpYc09YWVNiYUN0b0ZONGphU0hmLURBQUZLZTk1WGdMSUxoRkNnMFhHUTQ0Q2Z2YURYdk9Ecmc?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T17:10:00Z",
+      "content": null
     },
     {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "Heather Haddon",
-      "title": "McDonald’s Sales Soften, Sounding Alarm for Restaurants as Diners Curb Visits",
-      "description": "The fast-food giant said it is focusing on value with consumers continuing to tighten their budgets.",
-      "url": "https://www.wsj.com/business/earnings/mcdonalds-mcd-q2-earnings-report-2024-7010ea3a",
-      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/wpr4yLnPYAsdgvuATkyY1g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/the_wall_street_journal_hosted_996/5dc98ee7f1476661832203c5c1219d30",
-      "publishedAt": "2024-07-29T14:57:00Z",
-      "content": "McDonalds kicked off a string of quarterly reports from U.S. restaurant chains this week. - jaimi joy/Reuters\r\nMcDonalds said its sales last quarter sputtered as the burger giant grappled with consum… [+3987 chars]"
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "The Washington Post",
+      "title": "In his last act as president, Nixon finally showed his human side - The Washington Post",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVUNQZXA1Q0FpekRkcGp4ODRweHNiWHhqMDRUR1p4TDRzYnI0cFJwU0MyZEVzSjlFQWxYclUyOFdxZkt5QmZ2RUN6cGUxUm1jOE9JR1VnZXZnUy1xUVQ5UVAxQ3BxemRYZi1kNENtaWM3Qi1WRm51UU9KUU9WUnhBWGs0TFdZcVEyazBuSkpIQVFMOThq?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T17:00:10Z",
+      "content": null
     },
     {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "Alexander Osipovich",
-      "title": "NYSE’s Longtime IPO Pitchman, John Tuttle, to Leave After 17 Years",
-      "description": "Tuttle helped persuade companies such as Palantir and Snowflake to list on the Big Board, rather than Nasdaq.",
-      "url": "https://www.wsj.com/finance/nyses-longtime-ipo-pitchman-john-tuttle-to-leave-after-17-years-24fa8e22",
-      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/4wCWYh81PtQHR1B8Dd21Rg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/the_wall_street_journal_hosted_996/80c4d69d35afc85e88b2dee1a5ebcbab",
-      "publishedAt": "2024-07-24T21:12:00Z",
-      "content": "John Tuttle - Emily Assiran for WSJ\r\nJohn Tuttle, a veteran executive at the New York Stock Exchange who gained prominence as its top salesman for attracting initial public offerings, plans to leave … [+2802 chars]"
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "CNN",
+      "title": "Crew of Titan sub knew they were going to die before implosion, according to more than $50M lawsuit - CNN",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOOWNHZE5VUjNrSlc2bE93TWw4ZEV1ZndqdVNRX2UzTGZKY2d5anc2ZE55U3pSMWlaMVlwZ2FNU2xMVWlwa2ttbkhvVTBGR1RoRktmaVpvSGNwVFR5QjA5SmNwNGFjc0RSWllnNWI1QzRXTDAzclJrQ3FtU1VlRTFUaGd0dThZYnfSAX5BVV95cUxPWXJGWEM4R2lmZkp1dkpYU1BXR1dIOTVnSTJaRjBPQ0tzeG10TUllcnJfQnkzNE1scUZBbHg5SUdlQ0xsOEhUTEZhMGRoWFU3dk1sQ2lIam9DbUVtcnFpbWFGdUVqR2ZJNjgzeEQ4cHBMbGhZTWN1N1F4Zms3WVE?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T17:00:00Z",
+      "content": null
     },
     {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "Jason Douglas and Rebecca Feng",
-      "title": "Feared in the West, China’s Manufacturers Struggle at Home",
-      "description": "Huge overinvestment, weak domestic sales and trade barriers abroad have depressed companies’ profits and pushed many to the brink.",
-      "url": "https://www.wsj.com/world/china/feared-in-the-west-chinas-manufacturers-struggle-at-home-8a64f2c3",
-      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/eISXrBI9f3b_G_1eMuGdKQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/the_wall_street_journal_hosted_996/0498393ecfcd7b73dbfc72e077f2b386",
-      "publishedAt": "2024-07-21T04:03:00Z",
-      "content": "A robot welds battery-pack accessories at a Chinese manufacturing plant. - Cfoto/DDP/Zuma Press\r\nSINGAPOREAs Western companies quake at the latest onslaught of cheap Chinese goods, a similar drama is… [+6105 chars]"
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "New York Post ",
+      "title": "COVID-19 no longer a top cause of US death — here’s what’s replaced it - New York Post ",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaVdQWjlnSmdsTnVhN3dTa3V5OVRobUFERU1VcDMzUENHeVJ4amk5NUE3andrUDA5SVk3WTF1TXpSeVNXYTk3OVpBU2tibk5BV184a1FoU0hQZ2Zrc1NBak5mOWU0T1lRTVIwVkFueGpjUWhNVXFxZG9VbU5hNThKTk1meFR1RTA5bjlDRlh1YThzZGZ0dWRRSGRzMjBpaHg2?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T17:00:00Z",
+      "content": null
     },
     {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "Patrick Thomas",
-      "title": "Pork Producer Smithfield Plans U.S. Stock Listing",
-      "description": "China’s WH Group seeks to list Smithfield’s U.S. and Mexico business after acquiring the enterprise more than a decade ago.",
-      "url": "https://www.wsj.com/business/retail/pork-producer-smithfield-plans-return-to-equity-u-s-markets-1f9eeb37",
-      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/Tm2tNZPHeep0w6tjK.9T8Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/the_wall_street_journal_hosted_996/c9a75eb46f0f1e0f602d3d74ec0ba927",
-      "publishedAt": "2024-07-14T11:42:00Z",
-      "content": "Smithfield Foods is the largest U.S. pork producer. An employee handles sides of pork at a Smithfield facility in Milan, Mo. - Daniel Acker/Bloomberg News\r\nThe Chinese parent of Smithfield Foods says… [+3489 chars]"
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "The Guardian",
+      "title": "Colin Farrell opens up about son with Angelman syndrome: ‘We still struggle’ - The Guardian",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPN0hjcy10SlNOWUFXV1drekFvUUt0ZnhJUVNUQUpWYWZaS3UwZzNadHJDazlGUnV2azBEdGJiMUlkeFJ4akJsc1hBV3NEVnFUSnZpdXpjc1B5aFdHRS1zbUswWHpQLTdEUWZvODZlUU9oeEZUNnZfZXVSU2NFY3BaNDU5cUVyMnB0VlI4NmVKTHpJd9IBkgFBVV95cUxOYXpncEJBVk5la2l2ZlZNal90ZVdmOVlGYjBJajlVSVhJdHo0ZHVVR1N2eUZkUkk5NzQ3dmtmQ3BSbjBOY2Y4LWlSWF9GNHUyVkJ2NTZLcks4T190ZGVvOWdUWGRRNjczSkd6QnhlaDhER2lrZXBiZlJUdmZrU09ud1loeS0xQkp0SnhHUGFlYW9yQQ?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T16:48:00Z",
+      "content": null
     },
     {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "Justin Baer, Gina Heeb and Alexander Saeedy",
-      "title": "Big Banks and Customers Continue to Feel Pressure From Higher Rates",
-      "description": "JPMorgan and Wells Fargo both reported a drop in quarterly profit, while Citigroup’s profit rose, driven in part by the bank’s cost-cutting measures.",
-      "url": "https://www.wsj.com/finance/banking/bank-earnings-jp-morgan-chase-wells-fargo-citigroup-23fd9540",
-      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/HKXh1GJ9fvkHK2Af26lJtw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/the_wall_street_journal_hosted_996/6fe2d91448f6d9dacb2cb3c336e2ff24",
-      "publishedAt": "2024-07-12T20:26:00Z",
-      "content": "The countrys biggest banks, including JPMorgan Chase, began reporting quarterly earnings Friday. - Jeenah Moon/Bloomberg News\r\nThe fight to rein in inflation continues to weigh on some of the nations… [+5859 chars]"
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "WDSU New Orleans",
+      "title": "VIDEO HIGHLIGHT: Noah Lyles, volleyball, and world records headline Day 13 at Paris Olympics - WDSU New Orleans",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQU011MkFHYXYwaFdwS3Bfbko1Yy1lN3lRQkJiMFctVXBWRkd1TTB6MHB6dkFWUXBvNUxKaXJDMm5QNHA1dktyMkhmSlNWNUppdTVRbWR5MHRZVTFiMUZ4Mm1QbjE3V2ZhYkVpMEU0SW1TMHphcWZURjdKZ3VTdGZvSHgzY2U?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T16:39:00Z",
+      "content": null
     },
     {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "Sam Goldfarb and Nick Timiraos",
-      "title": "Milder Inflation Opens Door Wider to September Rate Cut",
-      "description": "The rise in consumer prices eased to 3% in June, further extending a recent slowdown in price increases.",
-      "url": "https://www.wsj.com/economy/central-banking/inflation-june-cpi-report-interest-rate-437fa772",
-      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/1rXdaoVimlWnceazwwwxJQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/the_wall_street_journal_hosted_996/a5bb988ab74ee8615b7e34252dd0b679",
-      "publishedAt": "2024-07-11T20:35:00Z",
-      "content": "The CPI report showed prices cooled broadly in the second quarter. - SeongJoon Cho/Bloomberg News\r\nU.S. inflation eased substantially in June, extending a recent slowdown in price increases that clea… [+6731 chars]"
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "CBS Sports",
+      "title": "White Sox manager candidates: Ozzie Guillén, Grady Sizemore and more possible Pedro Grifol replacements - CBS Sports",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPRldFdkYxdzB4STYxR1BlWUE0WlE1ajNDb25fNG5ZMWVEaTlMVUJRcEd6VlhJTlBva0ZVSUl2M2gydU90c05Wb1ZkdkgwY0RRMmZnUWJtYTN3dlQta3I0cFRzZ3B2NUNmUkstUlJsX0RjSHZac1pCUTl6cVVMMm4tVlpDWFlVOHF4X0FsRVNMbkZTQ2RmR0J2Tm9uT0trR05VVFhMTkdCMDNlWmRKZ0NQNDcwb0s1eGRYaHpTbFFMaFpwY1k3U3BvUlFPdlNtck9kaFd30gHYAUFVX3lxTFBBclp3cWZNdWg0a20wNHlja0l0eWJSNFRXdGl0ZFJiVGVEcVF0ZWpqMUoxbFBJSnQ3VEFSbF96dGFEVTBBYXZQeHFnbGZhRVVLOXVIT1hKa1FiS1NyZUVEWkJsbXFUSUxnanNSYWFyNWttMHNBRGZudGZ3RG9lQ1dFOEt1dzg1OXlXdDJmUndIRFBYZkZzdlg1N0UyNkZZbjFzYTRUSHpod05EOS1UemZtOTlNektVbDZsd3hCSlIzOEpfcTE3RUlZWnhHRlVJVlNkb3lpSWdFeA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T16:22:00Z",
+      "content": null
     },
     {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "Victor Stefanescu and Alison Sider",
-      "title": "Delta’s Sagging Profit Signals Trouble for Airlines This Summer",
-      "description": "Airports are attracting record traffic, but higher costs and discounted fares are expected to weigh on carriers.",
-      "url": "https://www.wsj.com/business/airlines/delta-dal-q2-earnings-report-2024-e025fb71",
-      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/shko7aINLFghwbYHor057w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/en/the_wall_street_journal_hosted_996/8bd0bb64edbd8921a0406f042ce2ccb7",
-      "publishedAt": "2024-07-11T16:02:00Z",
-      "content": "Deltas second-quarter profit declined 29%. - Miguel Martinez/Zuma Press\r\nDelta Air Lines reported a sharply lower profit in the second quarter as it faced a new challenge during the busy summer trave… [+3584 chars]"
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "Reuters",
+      "title": "Trump to hold news conference while Harris visits Michigan auto workers - Reuters",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPa09JT21oSFVBWWROYjZxU2hjRUlidUlOdWdWTWp2aWZxSk9NMGI0WkRydXdXUEMxOXRfUGVJOXBkWEctR1FkNUR4MmtLdmc5bzlnNDRDbVNVUGg3ZFE3Rzg5Mm9LZEdLRmw2cTlROGw5MXBYcmtmb1VNM0RoOXVXRkpiSTRZd2dTNFNBSzQzMVVvTW9LQmM1V2dmMHhVZDRibnBRMVZmenUwS2ZBMmN3SUhUOA?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T16:11:00Z",
+      "content": null
+    },
+    {
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "New York Post ",
+      "title": "Michelle Pfeiffer will officially star in ‘Yellowstone’ sequel series ‘The Madison’ - New York Post ",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZFBNVUlQT042ZjQ3RkpvTXd0LWx6Zl9jbzA5LWVUNVhUZkZkWkd3RkEybU1DMUdjVWtsN1JLUl9xdm9fZ2xvVWJ3NnV0VDZieUwtMktHWG5KM21fQWtDSUxIOHFrTnVqQ3BuZXg5SXdrOFNlb1VtMmt4X0todFRyQ0Rpd3VYNnQ2YnMzZGF1ZEpkWHVwRkhLUVBIUm9kUQ?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T16:05:00Z",
+      "content": null
+    },
+    {
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "Fox Business",
+      "title": "JPMorgan sees a greater chance of a US recession this year - Fox Business",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOQ1F0MmNoNHJKbTBCMU53b2FqS0g5U25lNU1pRy16d1FRUWg0NlllR3hCVHFrZms4T0p2V3dfZVNYYUtrZ1hHZFNRTzdMcFQtcjdMaS0xZGZINkZ3Nl9ZOVRTamxYQzNqY3BFSjlQTjdZc0diS1gzYk5tWGs1MXo4T0RHUERwZllLUUHSAY8BQVVfeXFMTTFHU05tR1FocmhBRmlzMC00T2x1am1uUklIVEVDbWlEQWJfQkZhV0U3WXhEWTBFaUxJbEt0REU3a2lVR1RmV0xuZ294dEswazhUVmFCWWxNZklhbVVnSm9zTVBhQVZ6WURlY08yRUM1U1ZxckJJdzFtNnQ4dUMzUlNEWWFGeXhxRTZiblRadWs?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T16:03:00Z",
+      "content": null
+    },
+    {
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "9to5Mac",
+      "title": "Gurman: Here’s when to expect M4 Mac Studio, Mac Pro, and MacBook Air updates - 9to5Mac",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLTFIdC1Ya2VxeExTSHJvc1JBU0tkUFUwaVpWSWZuWVdiTkNTX3F4RXkwT0VkbFFKU1VLUGh0WjI3bDM2WE1aVDZXaXhPUWcyVnV3OEk5M2t6T2hkSDZUX2Z1WTBDeFZkcUdMQU1BVFJTWW1ERUhXaWVQbGNaVWVMdENFYnlkQzdBZ2E1TUJrOVB0bDlVeFB5UWktSHhILXhLS1NYaDEyNmk?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T16:02:00Z",
+      "content": null
+    },
+    {
+      "source": { "id": "google-news", "name": "Google News" },
+      "author": "Yahoo Finance",
+      "title": "Boeing’s new CEO is already making an overdue change his first day on the job - Yahoo Finance",
+      "description": null,
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZjNsWEcwZm1qRW9pc2dFdFpFY25SaER0R2dnWi1SUnZUdXBWcDd2Z2JVVklTdlJoYlcwWU5MV282dzVsd0QtUVk5NkM1MS1XOVpGeVZSejNLYlJES2VDQUhnT2lsU3ZrMy1LWndEY183RnVLNEl4OXpIamRiVU83Q0tjLWVRUQ?oc=5",
+      "urlToImage": null,
+      "publishedAt": "2024-08-08T15:17:33Z",
+      "content": null
     }
   ]
 }

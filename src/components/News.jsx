@@ -135,6 +135,9 @@ export default class News extends Component {
                     title={elements.title}
                     disc={elements.description}
                     imageUrl={elements.urlToImage?elements.urlToImage:`https://eagle-sensors.com/wp-content/uploads/unavailable-image.jpg`}
+                    author = {elements.author}
+                    publishedAt = {elements.publishedAt}
+                    source = {elements.source.name}
                     newsUrl={elements.url}
                   />
                 </div>

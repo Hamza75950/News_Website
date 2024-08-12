@@ -8,35 +8,50 @@ import {
 import Navbar from "./components/Navbar";
 import News from "./components/News";
 
-
-
 const NewsWrapper = () => {
-  const { category } = useParams();
-  return <News key={category} pageSize={6} country="us" category={category} />;
   
+  const { category } = useParams();
+  return (
+    <News
+      key={category}
+      pageSize={this.pageSize}
+      country="us"
+      category={category}
+    />
+  );
 };
 
 export default class App extends Component {
-  c = "hamza";
-  
+  pageSize = 9;
   render() {
-
     const router = createBrowserRouter([
       {
         path: "/",
-        element: <><Navbar /> <News key = "general" pageSize={6} country="us" category="general"/> </>,
+        element: (
+          <>
+            <Navbar />{" "}
+            <News
+              key="general"
+              pageSize={this.pageSize}
+              country="us"
+              category="general"
+            />{" "}
+          </>
+        ),
       },
       {
         path: "/:category",
-        element: <><Navbar /> <NewsWrapper/> </>,
+        element: (
+          <>
+            <Navbar /> <NewsWrapper />{" "}
+          </>
+        ),
       },
-    ])
-   
+    ]);
 
-   
     return (
       <div>
-         <RouterProvider router={router} />
+        <RouterProvider router={router} />
       </div>
     );
   }

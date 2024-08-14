@@ -8,13 +8,13 @@ import {
 import Navbar from "./components/Navbar";
 import News from "./components/News";
 
-const NewsWrapper = () => {
-  
+const NewsWrapper = (props) => {
   const { category } = useParams();
+  
   return (
     <News
       key={category}
-      pageSize={this.pageSize}
+      pageSize={props.pageSize}
       country="us"
       category={category}
     />
@@ -22,7 +22,7 @@ const NewsWrapper = () => {
 };
 
 export default class App extends Component {
-  pageSize = 9;
+  pageSize = 6;
   render() {
     const router = createBrowserRouter([
       {
@@ -35,6 +35,31 @@ export default class App extends Component {
               pageSize={this.pageSize}
               country="us"
               category="general"
+              source = " "
+            />{" "}
+          </>
+        ),
+      },
+      {
+        path: "/techcrunch",
+        element: (
+          <>
+            <Navbar /> <News
+              category="techcrunch"
+              key = "techcrunch"
+              source = "techcrunch"
+            />{" "}
+          </>
+        ),
+      },
+      {
+        path: "/apple",
+        element: (
+          <>
+            <Navbar /> <News
+              category="apple"
+              key = "apple"
+              source = "apple"
             />{" "}
           </>
         ),
@@ -43,7 +68,7 @@ export default class App extends Component {
         path: "/:category",
         element: (
           <>
-            <Navbar /> <NewsWrapper />{" "}
+            <Navbar /> <NewsWrapper pageSize= {this.pageSize} />{" "}
           </>
         ),
       },

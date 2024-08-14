@@ -48,6 +48,10 @@ export default class Navbar extends Component {
                   <Link className="nav-link" to={`/sports`}>Sports</Link></li>
                 <li className="nav-item">
                   <Link className="nav-link" to={`/technology`}>Technology</Link></li>
+                  <li className="nav-item">
+                  <Link className="nav-link" to={`/techcrunch`}>Tech Crunch News</Link></li>
+                  <li className="nav-item">
+                  <Link className="nav-link" to={`/apple`}>Everything Apple News</Link></li>
               </ul>
             </div>
           </div>

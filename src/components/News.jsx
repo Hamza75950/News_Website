@@ -1,179 +1,204 @@
 import React, { Component } from "react";
 import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
+import InfiniteScroll from "react-infinite-scroll-component";
 
 export default class News extends Component {
   static defaultProps = {
-    country : "us",
+    country: "us",
     category: "general",
     pageSize: 6,
-    
-  }
+  };
   static propType = {
-    country : PropTypes.string,
+    country: PropTypes.string,
     category: PropTypes.string,
     pageSize: PropTypes.number,
-  }
-  articles = [
-    {
-      "source": { "id": "cnn", "name": "CNN" },
-      "author": "Joan Biskupic",
-      "title": "Exclusive: Inside the Supreme Court’s negotiations and compromise on Idaho’s abortion ban - CNN",
-      "description": "The Supreme Court began the year poised to build on its 2022 decision overturning Roe v. Wade and to deliver a new blow to abortion access.",
-      "url": "https://www.cnn.com/2024/07/29/politics/supreme-court-idaho-abortion-emtala-biskupic/index.html",
-      "urlToImage": "",
-      "publishedAt": "2024-07-29T12:32:00Z",
-      "content": "The Supreme Court began the year poised to build on its 2022 decision overturning Roe v. Wade and to deliver a new blow to abortion access.\r\nIn January, the court took the extraordinary step of letti… [+11077 chars]"
-    },
-    {
-      "source": { "id": null, "name": "CNBC" },
-      "author": "Jesse Pound",
-      "title": "Stock futures rise ahead of major tech earnings reports set for later this week: Live updates - CNBC",
-      "description": "Earnings from Apple and Microsoft and a Federal Reserve meeting are key events in the week ahead.",
-      "url": "https://www.cnbc.com/2024/07/28/stock-futures-are-little-changed-ahead-of-loaded-week-for-tech-earnings.html",
-      "urlToImage": "https://image.cnbcfm.com/api/v1/image/108011433-1721856730435-gettyimages-2163516206-migrant461209_fzgmkcol.jpeg?v=1721856896&w=1920&h=1080",
-      "publishedAt": "2024-07-29T11:10:00Z",
-      "content": "Stock futures rose Monday as Wall Street gears up for a busy week of corporate earnings.\r\nFutures tied to the Dow Jones Industrial Average climbed 153 points, or 0.4%. S&amp;P 500 futures gained 0.4%… [+1382 chars]"
-    },
+  };
 
-    {
-      "source": { "id": "ars-technica", "name": "Ars Technica" },
-      "author": "Kevin Purdy",
-      "title": "Synology BeeStation review: A great way to start getting real about backups - Ars Technica",
-      "description": "If you're not ready for full-on NAS gear, consider this clever little drive.",
-      "url": "https://arstechnica.com/gadgets/2024/07/synology-beestation-review-a-great-way-to-start-getting-real-about-backups/",
-      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2024/07/beestation_handout-760x380.jpg",
-      "publishedAt": "2024-07-29T11:00:54Z",
-      "content": "Enlarge/ In this handout image from Synology, a thoughtful worker uses BeeFiles on their MacBook and BeePhotos on their iPhone, always keeping their BeeStation close at hand. They might have importan… [+4508 chars]"
-    },
+  capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
 
-    {
-      "source": { "id": "cbs-news", "name": "CBS News" },
-      "author": null,
-      "title": "French police arrest ultra-left activist over pre-Olympics railway sabotage as new incident hits phone lines - CBS News",
-      "description": "Police have arrested a far-left activist in connection with arson attacks that hit France's high-speed rail network hours before the Olympic opening ceremony.",
-      "url": "https://www.cbsnews.com/news/paris-olympics-trains-sabotage-arrest-far-left-activist-phone-lines-telecommunications/",
-      "urlToImage": "https://assets1.cbsnewsstatic.com/hub/i/r/2024/07/29/9ac08a65-e56f-4816-b024-ecb4f7400409/thumbnail/1200x630g8/e1a819c10244028524f507920c7823a5/france-rail-sabotage-2162884981.jpg?v=5501038cbc281520ff9fdc308faab7dc",
-      "publishedAt": "2024-07-29T10:03:09Z",
-      "content": "Your Privacy\r\nWe process your data to deliver content or advertisements and measure the delivery of such content or advertisements to extract insights about our website. We share this information wit… [+1677 chars]"
-    }
-  ]
-
-
-
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      articles: this.articles,
+      articles: [],
       loading: false,
       page: 1,
+      totalResults: 0,
       nextDisable: false,
     };
+    document.title = `${this.capitalizeFirstLetter(
+      this.props.category
+    )}  News App`;
     // console.log(this.state.page)
   }
 
+  async updateNews() {
+    let url = "";
+    if (this.props.source === "techcrunch"){
+       url =`https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=56e1d34c21a145649f563b048290ee6d`
+      }
+      else if(this.props.source === "apple"){
+        url = `https://newsapi.org/v2/everything?q=apple&from=2024-08-13&to=2024-08-13&sortBy=popularity&apiKey=56e1d34c21a145649f563b048290ee6d`
+    }
+    else{
+       url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=56e1d34c21a145649f563b048290ee6d&page=${this.state.page}&pageSize=${this.props.pageSize}`;
 
-  async updateNews(){
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=56e1d34c21a145649f563b048290ee6d&page=${this.state.page}&pageSize=${this.props.pageSize}`
-    this.setState({loading : true})
-    let data = await fetch(url)
-    let parseData = await data.json()
-    this.setState({articles:parseData.articles , 
-      totalResults :parseData.totalResults,
-      loading: false
-    })
+    }
+    this.setState({ loading: true });
+    let data = await fetch(url);
+    let parseData = await data.json();
+    this.setState({
+      articles: parseData.articles,
+      totalResults: parseData.totalResults,
+      loading: false,
+    });
   }
 
-  
-  async componentDidMount(){
+  async componentDidMount() {
     // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=56e1d34c21a145649f563b048290ee6d&page=${this.state.page}&pageSize=${this.props.pageSize}`
     // this.setState({loading : true})
     // let data = await fetch(url)
     // let parseData = await data.json()
-    // this.setState({articles:parseData.articles , 
+    // this.setState({articles:parseData.articles ,
     //   totalResults :parseData.totalResults,
     //   loading: false
     // })
-    this.updateNews()
-  }
-  
-  handlePrev = async()=>{
-    // let url =  `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=56e1d34c21a145649f563b048290ee6d&page=${this.state.page-1}&pageSize=${this.props.pageSize}`
-    // this.setState({loading : true})
-    // let data = await fetch(url)
-    // let parseData = await data.json()
-    // this.setState(
-    //   {
-    //     page : this.state.page - 1,
-    //     articles:parseData.articles,
-    //     nextDisable:false,
-    //     loading:false,
-    //   })
-    this.setState({
-      page: this.state.page -1
-    })
     this.updateNews();
   }
 
-  handleNext = async ()=>{
-    if(!(this.state.page+1 > Math.ceil(this.state.totalResults/this.props.pageSize))){
-  
-    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=56e1d34c21a145649f563b048290ee6d&page=${this.state.page+1}&pageSize=${this.props.pageSize}`
-    // this.setState({loading : true})
-    // let data = await fetch(url)
-    // let parseData = await data.json()
-    // this.setState(
-    //   {
-    //     page :this.state.page + 1 ,
-    //     articles:parseData.articles,
-    //     loading:false,
+  // handlePrev = async () => {
+  //   // let url =  `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=56e1d34c21a145649f563b048290ee6d&page=${this.state.page-1}&pageSize=${this.props.pageSize}`
+  //   // this.setState({loading : true})
+  //   // let data = await fetch(url)
+  //   // let parseData = await data.json()
+  //   // this.setState(
+  //   //   {
+  //   //     page : this.state.page - 1,
+  //   //     articles:parseData.articles,
+  //   //     nextDisable:false,
+  //   //     loading:false,
+  //   //   })
+  //   this.setState({
+  //     page: this.state.page - 1,
+  //   });
+  //   this.updateNews();
+  // };
 
-    //   })
-    this.setState({
-      page: this.state.page +1
-    })
-    this.updateNews();
+  // handleNext = async () => {
+  //   if (
+  //     !(
+  //       this.state.page + 1 >
+  //       Math.ceil(this.state.totalResults / this.props.pageSize)
+  //     )
+  //   ) {
+  //     // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=56e1d34c21a145649f563b048290ee6d&page=${this.state.page+1}&pageSize=${this.props.pageSize}`
+  //     // this.setState({loading : true})
+  //     // let data = await fetch(url)
+  //     // let parseData = await data.json()
+  //     // this.setState(
+  //     //   {
+  //     //     page :this.state.page + 1 ,
+  //     //     articles:parseData.articles,
+  //     //     loading:false,
 
+  //     //   })
+  //     this.setState({
+  //       page: this.state.page + 1,
+  //     });
+  //     this.updateNews();
+  //   }
+  // };
+
+  fetchMoreData = async () => {
+    this.setState({ page: this.state.page + 1 });
+    let url = "";
+    if (this.props.source === "techcrunch"){
+       url =`https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=56e1d34c21a145649f563b048290ee6d`
+      }
+      else if(this.props.source === "apple"){
+        url = `https://newsapi.org/v2/everything?q=apple&from=2024-08-13&to=2024-08-13&sortBy=popularity&apiKey=56e1d34c21a145649f563b048290ee6d`
     }
-  }
+    else{
+       url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=56e1d34c21a145649f563b048290ee6d&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+
+    }    this.setState({ loading: true });
+    let data = await fetch(url);
+    let parseData = await data.json();
+    this.setState({
+      articles: this.state.articles.concat(parseData.articles),
+      totalResults: parseData.totalResults,
+      loading: false,
+    });
+  };
 
   render() {
-
     return (
       <div>
-        <div className="container my-3">
-        <h1 className="text-center" style={{margin : "35px 0px"}}>News Top Headline</h1>
-        {this.state.loading &&<Spinner/>}
-          <div  className="row mb-3 ">
-
-            {!this.state.loading && this.state.articles.map((elements) => {
-              
-              return (
-                <div key={elements.url} className="col-md-4 mb-3">
-                  <NewsItem
-                    title={elements.title}
-                    disc={elements.description}
-                    imageUrl={elements.urlToImage?elements.urlToImage:`https://eagle-sensors.com/wp-content/uploads/unavailable-image.jpg`}
-                    author = {elements.author}
-                    publishedAt = {elements.publishedAt}
-                    source = {elements.source.name}
-                    newsUrl={elements.url}
-                  />
-                </div>
-              );
-            })}
-          </div>
-          </div>
-          <div className="container d-flex justify-content-between">
-          <button type="button" disabled={this.state.page<=1} className="btn btn-dark " onClick={this.handlePrev}> &lt; Previous</button>
-          <button type="button" disabled={this.state.page+1 > Math.ceil(this.state.totalResults/this.props.pageSize)} className="btn btn-dark" onClick={this.handleNext}>Next &gt;</button>
-          </div>
-
+        <div className=" my-3">
+          <h1 className="text-center" style={{ margin: "35px 0px" }}>
+            Top {this.capitalizeFirstLetter(this.props.category)} Headline
+          </h1>
+          {/* {this.state.loading && <Spinner />} */}
+          <InfiniteScroll
+            dataLength={this.state.articles.length}
+            next={this.fetchMoreData}
+            hasMore={this.state.articles.length < this.state.totalResults}
+            loader={<Spinner />}
+          >
+            <div className="container">
+              <div className="row m-3 ">
+                {this.state.articles.map((elements, index) => {
+                  return (
+                    <div
+                      key={`${elements.url}-${index}`}
+                      className="col-md-4 mb-3"
+                    >
+                      <NewsItem
+                        title={elements.title}
+                        disc={elements.description}
+                        imageUrl={
+                          elements.urlToImage
+                            ? elements.urlToImage
+                            : `https://eagle-sensors.com/wp-content/uploads/unavailable-image.jpg`
+                        }
+                        author={elements.author}
+                        publishedAt={elements.publishedAt}
+                        source={elements.source.name}
+                        newsUrl={elements.url}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </InfiniteScroll>
         </div>
-     
-
-
+        {/* <div className="container d-flex justify-content-between">
+          <button
+            type="button"
+            disabled={this.state.page <= 1}
+            className="btn btn-dark "
+            onClick={this.handlePrev}
+          >
+            {" "}
+            &lt; Previous
+          </button>
+          <button
+            type="button"
+            disabled={
+              this.state.page + 1 >
+              Math.ceil(this.state.totalResults / this.props.pageSize)
+            }
+            className="btn btn-dark"
+            onClick={this.handleNext}
+          >
+            Next &gt;
+          </button>
+        </div> */}
+      </div>
     );
   }
 }

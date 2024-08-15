@@ -24,7 +24,7 @@ export default class News extends Component {
     super(props);
     this.state = {
       articles: [],
-      loading: false,
+      loading: true,
       page: 1,
       totalResults: 0,
       nextDisable: false,
@@ -37,24 +37,24 @@ export default class News extends Component {
 
   async updateNews() {
     let url = "";
-    if (this.props.source === "techcrunch"){
-       url =`https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=56e1d34c21a145649f563b048290ee6d`
-      }
-      else if(this.props.source === "apple"){
-        url = `https://newsapi.org/v2/everything?q=apple&from=2024-08-13&to=2024-08-13&sortBy=popularity&apiKey=56e1d34c21a145649f563b048290ee6d`
+    this.props.setProgress(10);
+    if (this.props.source === "techcrunch") {
+      url = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=56e1d34c21a145649f563b048290ee6d`;
+    } else if (this.props.source === "apple") {
+      url = `https://newsapi.org/v2/everything?q=apple&from=2024-08-13&to=2024-08-13&sortBy=popularity&apiKey=56e1d34c21a145649f563b048290ee6d`;
+    } else {
+      url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=56e1d34c21a145649f563b048290ee6d&page=${this.state.page}&pageSize=${this.props.pageSize}`;
     }
-    else{
-       url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=56e1d34c21a145649f563b048290ee6d&page=${this.state.page}&pageSize=${this.props.pageSize}`;
-
-    }
-    this.setState({ loading: true });
     let data = await fetch(url);
+    this.props.setProgress(30);
     let parseData = await data.json();
+    this.props.setProgress(70);
     this.setState({
       articles: parseData.articles,
       totalResults: parseData.totalResults,
       loading: false,
     });
+    this.props.setProgress(100);
   }
 
   async componentDidMount() {
@@ -115,22 +115,18 @@ export default class News extends Component {
   fetchMoreData = async () => {
     this.setState({ page: this.state.page + 1 });
     let url = "";
-    if (this.props.source === "techcrunch"){
-       url =`https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=56e1d34c21a145649f563b048290ee6d`
-      }
-      else if(this.props.source === "apple"){
-        url = `https://newsapi.org/v2/everything?q=apple&from=2024-08-13&to=2024-08-13&sortBy=popularity&apiKey=56e1d34c21a145649f563b048290ee6d`
+    if (this.props.source === "techcrunch") {
+      url = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=56e1d34c21a145649f563b048290ee6d`;
+    } else if (this.props.source === "apple") {
+      url = `https://newsapi.org/v2/everything?q=apple&from=2024-08-13&to=2024-08-13&sortBy=popularity&apiKey=56e1d34c21a145649f563b048290ee6d`;
+    } else {
+      url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=56e1d34c21a145649f563b048290ee6d&page=${this.state.page}&pageSize=${this.props.pageSize}`;
     }
-    else{
-       url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=56e1d34c21a145649f563b048290ee6d&page=${this.state.page}&pageSize=${this.props.pageSize}`;
-
-    }    this.setState({ loading: true });
     let data = await fetch(url);
     let parseData = await data.json();
     this.setState({
       articles: this.state.articles.concat(parseData.articles),
       totalResults: parseData.totalResults,
-      loading: false,
     });
   };
 
@@ -141,7 +137,7 @@ export default class News extends Component {
           <h1 className="text-center" style={{ margin: "35px 0px" }}>
             Top {this.capitalizeFirstLetter(this.props.category)} Headline
           </h1>
-          {/* {this.state.loading && <Spinner />} */}
+          {this.state.loading && <Spinner />}
           <InfiniteScroll
             dataLength={this.state.articles.length}
             next={this.fetchMoreData}

@@ -10,7 +10,8 @@ export default class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        {/* navbar navbar-expand-lg bg-body-tertiary */}
+        <nav className="navbar  navbar-dark bg-dark navbar-expand-lg">
           <div className="container-fluid">
             <Link className="navbar-brand" to={`/`}>
               News App

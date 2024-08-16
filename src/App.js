@@ -11,6 +11,7 @@ const NewsWrapper = (props) => {
   return (
     <News
       setProgress = {props.setProgress}
+      apiKey = {props.apiKey}
       key={category}
       source= {category}
       pageSize={props.pageSize}
@@ -22,6 +23,7 @@ const NewsWrapper = (props) => {
 
 export default class App extends Component {
   pageSize = 6;
+  apiKey = process.env.REACT_APP_API_KEY
   state = {
     progress : 0
   }
@@ -32,8 +34,8 @@ export default class App extends Component {
   }
   render() {
     // const router = createBrowserRouter([
-    //   {
-    //     path: "/",
+      //   {
+        //     path: "/",
     //     element: (
 
     //         <News
@@ -91,6 +93,7 @@ export default class App extends Component {
               path="/"
               element={
                 <News
+                  apiKey = {this.apiKey}
                   setProgress = {this.setProgress}
                   key="general"
                   pageSize={this.pageSize}
@@ -103,7 +106,7 @@ export default class App extends Component {
             
             <Route
               path="/:category"
-              element={<NewsWrapper pageSize={this.pageSize} setProgress = {this.setProgress} />}
+              element={<NewsWrapper pageSize={this.pageSize} apiKey = {this.apiKey} setProgress = {this.setProgress} />}
             />
           </Routes>
         </BrowserRouter>
